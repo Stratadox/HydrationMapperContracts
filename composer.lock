@@ -1,0 +1,223 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "99b83834de2acb04b62f64dd4ffa5ec1",
+    "packages": [
+        {
+            "name": "stratadox/collection-contracts",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stratadox/CollectionContracts.git",
+                "reference": "3b84ba39925779cedee322f5595912e0894bd1bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stratadox/CollectionContracts/zipball/3b84ba39925779cedee322f5595912e0894bd1bb",
+                "reference": "3b84ba39925779cedee322f5595912e0894bd1bb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "stratadox/specification-interfaces": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stratadox\\Collection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stratadox",
+                    "homepage": "http://www.stratadox.com/"
+                }
+            ],
+            "description": "Interfaces for the collection classes.",
+            "time": "2018-01-30T20:31:12+00:00"
+        },
+        {
+            "name": "stratadox/hydration-mapping-contracts",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stratadox/HydrationMappingContracts.git",
+                "reference": "37b506fc86bb8b585e614b676f94b1c862b86914"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stratadox/HydrationMappingContracts/zipball/37b506fc86bb8b585e614b676f94b1c862b86914",
+                "reference": "37b506fc86bb8b585e614b676f94b1c862b86914",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "stratadox/collection-contracts": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stratadox\\HydrationMapping\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stratadox",
+                    "homepage": "http://www.stratadox.com/"
+                }
+            ],
+            "time": "2018-02-01T22:12:56+00:00"
+        },
+        {
+            "name": "stratadox/hydrator-contracts",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stratadox/HydratorContracts.git",
+                "reference": "c1bbfa077eebce3b20523f3e718c2cb45603bc26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stratadox/HydratorContracts/zipball/c1bbfa077eebce3b20523f3e718c2cb45603bc26",
+                "reference": "c1bbfa077eebce3b20523f3e718c2cb45603bc26",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stratadox\\Hydrator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stratadox",
+                    "homepage": "http://www.stratadox.com/"
+                }
+            ],
+            "time": "2018-01-30T22:22:34+00:00"
+        },
+        {
+            "name": "stratadox/proxy-contracts",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stratadox/ProxyContracts.git",
+                "reference": "9f4894a6dcf0e1b8c6a379ddcee20c09134a3f7b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stratadox/ProxyContracts/zipball/9f4894a6dcf0e1b8c6a379ddcee20c09134a3f7b",
+                "reference": "9f4894a6dcf0e1b8c6a379ddcee20c09134a3f7b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stratadox\\Proxy\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stratadox",
+                    "homepage": "http://www.stratadox.com/"
+                }
+            ],
+            "time": "2018-02-01T20:26:25+00:00"
+        },
+        {
+            "name": "stratadox/specification-interfaces",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stratadox/SpecificationInterfaces.git",
+                "reference": "bff3d973c5a101fbea7a40cd236dcd520d35ba3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stratadox/SpecificationInterfaces/zipball/bff3d973c5a101fbea7a40cd236dcd520d35ba3d",
+                "reference": "bff3d973c5a101fbea7a40cd236dcd520d35ba3d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stratadox\\Specification\\Contract\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stratadox",
+                    "homepage": "http://www.stratadox.com/"
+                }
+            ],
+            "description": "Interfaces for the Specification Pattern for Php7",
+            "keywords": [
+                "PHP7",
+                "Specifications",
+                "condition",
+                "contract",
+                "contracts",
+                "ddd",
+                "filter",
+                "filters",
+                "interface",
+                "interfaces",
+                "isSatisfiedBy",
+                "pattern",
+                "satisfiable",
+                "satisfied",
+                "satisfiedBy",
+                "satisfying",
+                "select",
+                "selector",
+                "specification",
+                "specifier",
+                "specifying",
+                "stratadox"
+            ],
+            "time": "2017-09-07T22:10:47+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.1"
+    },
+    "platform-dev": []
+}
