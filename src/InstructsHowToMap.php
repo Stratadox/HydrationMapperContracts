@@ -6,7 +6,9 @@ namespace Stratadox\HydrationMapper;
 use Stratadox\HydrationMapping\MapsProperty;
 
 /**
- * Builds a property mapping object.
+ * Builds the property mapping.
+ *
+ * Specifies the details of a property.
  *
  * @author Stratadox
  * @package Stratadox\Hydrate
@@ -15,6 +17,8 @@ interface InstructsHowToMap
 {
     /**
      * Follow the instruction for a property to obtain the property mapping.
+     *
+     * Produces the resulting property mapping.
      *
      * @param string $property The property to apply this instruction to.
      *
