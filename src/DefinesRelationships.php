@@ -17,8 +17,10 @@ interface DefinesRelationships extends InstructsHowToMap
     /**
      * Defines the class that contains the collection.
      *
-     * @param string $class The container to use
-     * @return DefinesRelationships
+     * @param string $class         The collection class to contain the related
+     *                              instances.
+     *
+     * @return DefinesRelationships The updated relationship definer.
      */
     public function containedInA(
         string $class
@@ -27,8 +29,10 @@ interface DefinesRelationships extends InstructsHowToMap
     /**
      * Defines the object that produces proxy loaders.
      *
-     * @param ProducesProxyLoaders $loader The class that produces the loaders
-     * @return DefinesRelationships
+     * @param ProducesProxyLoaders $loader The proxy loader factory that lazily
+     *                                     loads the related entities.
+     *
+     * @return DefinesRelationships        The updated relationship definer.
      */
     public function loadedBy(
         ProducesProxyLoaders $loader
@@ -37,7 +41,7 @@ interface DefinesRelationships extends InstructsHowToMap
     /**
      * Defines the source data to be nested.
      *
-     * @return DefinesRelationships
+     * @return DefinesRelationships The updated relationship definer.
      */
     public function nested(
     ): DefinesRelationships;
@@ -45,9 +49,13 @@ interface DefinesRelationships extends InstructsHowToMap
     /**
      * Defines a choice between concrete implementations.
      *
-     * @param string $decisionKey
-     * @param array  $choices
-     * @return DefinesRelationships
+     * @param string $decisionKey   The name of the data key whose value will be
+     *                              used to decide which hydrator to use.
+     * @param array $choices        An associative array with the available
+     *                              choices as keys, and hydrator instances as
+     *                              values.
+     *
+     * @return DefinesRelationships The updated relationship definer.
      */
     public function selectBy(
         string $decisionKey,
@@ -57,9 +65,12 @@ interface DefinesRelationships extends InstructsHowToMap
     /**
      * Add a property with optional mapping instructions.
      *
-     * @param string                 $property    The property to define
-     * @param InstructsHowToMap|null $instruction The instruction on how to map
-     * @return DefinesRelationships
+     * @param string                 $property    The name of the  property to
+     *                                            define.
+     * @param InstructsHowToMap|null $instruction Optional mapping instructions,
+     *                                            defaults to string conversion.
+     *
+     * @return DefinesRelationships               The updated relationship definer.
      */
     public function with(
         string $property,

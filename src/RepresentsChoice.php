@@ -17,9 +17,11 @@ interface RepresentsChoice
     /**
      * Add a property with optional mapping instructions.
      *
-     * @param string                 $property
-     * @param InstructsHowToMap|null $howToMap
-     * @return RepresentsChoice
+     * @param string                 $property The name of the  property to
+     *                                         define.
+     * @param InstructsHowToMap|null $howToMap Optional mapping instructions,
+     *                                         defaults to string conversion.
+     * @return RepresentsChoice                The updated choice.
      */
     public function with(
         string $property,
@@ -29,7 +31,7 @@ interface RepresentsChoice
     /**
      * Finalise the process and produce a mapped hydrator.
      *
-     * @return Hydrates
+     * @return Hydrates The resulting hydrator.
      */
     public function finish(): Hydrates;
 }

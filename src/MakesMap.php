@@ -17,9 +17,12 @@ interface MakesMap
     /**
      * Add a property with optional mapping instructions.
      *
-     * @param string                 $property
-     * @param InstructsHowToMap|null $instruction
-     * @return MakesMap
+     * @param string                 $property    The name of the property to
+     *                                            define.
+     * @param InstructsHowToMap|null $instruction Optional mapping instructions,
+     *                                            defaults to string conversion.
+     *
+     * @return MakesMap                           The updated map builder.
      */
     public function property(
         string $property,
@@ -27,9 +30,9 @@ interface MakesMap
     ): MakesMap;
 
     /**
-     * Finalise the process and produce the object mapping.
+     * Finalise the process and produce the mapped hydrator.
      *
-     * @return Hydrates
+     * @return Hydrates The resulting hydrator.
      */
     public function finish(): Hydrates;
 }

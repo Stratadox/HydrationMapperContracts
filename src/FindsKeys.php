@@ -15,7 +15,7 @@ interface FindsKeys
     /**
      * Retrieves the data key.
      *
-     * @return string The data key for this property
+     * @return string The data key for this property.
      */
     public function find(): string;
 }
