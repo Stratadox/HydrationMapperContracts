@@ -19,6 +19,7 @@ interface InstructsHowToMap
      * @param string $property The property to apply this instruction to.
      *
      * @return MapsProperty    The resulting property mapping.
+     * @throws InvalidMapperConfiguration
      */
     public function followFor(string $property): MapsProperty;
 }

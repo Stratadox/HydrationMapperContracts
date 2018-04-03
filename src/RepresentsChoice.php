@@ -31,6 +31,7 @@ interface RepresentsChoice
      * Finalise the process and produce a mapped hydrator.
      *
      * @return Hydrates The resulting hydrator.
+     * @throws InvalidMapperConfiguration
      */
     public function finish(): Hydrates;
 }

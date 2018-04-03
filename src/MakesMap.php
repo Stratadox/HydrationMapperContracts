@@ -32,6 +32,7 @@ interface MakesMap
      * Finalise the process and produce the mapped hydrator.
      *
      * @return Hydrates The resulting hydrator.
+     * @throws InvalidMapperConfiguration
      */
     public function finish(): Hydrates;
 }
