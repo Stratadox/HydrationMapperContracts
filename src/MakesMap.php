@@ -34,7 +34,7 @@ interface MakesMap
     public function property(
         string $property,
         InstructsHowToMap $instruction = null
-    ): MakesMap;
+    ): self;
 
     /**
      * Finalise the process and produce the mapped hydrator.

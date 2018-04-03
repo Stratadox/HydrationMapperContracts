@@ -26,9 +26,7 @@ interface DefinesRelationships extends InstructsHowToMap
      *
      * @return DefinesRelationships The updated relationship definer.
      */
-    public function containedInA(
-        string $class
-    ): DefinesRelationships;
+    public function containedInA(string $class): self;
 
     /**
      * Defines the object that produces proxy loaders.
@@ -42,9 +40,7 @@ interface DefinesRelationships extends InstructsHowToMap
      *
      * @return DefinesRelationships        The updated relationship definer.
      */
-    public function loadedBy(
-        ProducesProxyLoaders $loader
-    ): DefinesRelationships;
+    public function loadedBy(ProducesProxyLoaders $loader): self;
 
     /**
      * Defines the source data to be nested.
@@ -54,8 +50,7 @@ interface DefinesRelationships extends InstructsHowToMap
      *
      * @return DefinesRelationships The updated relationship definer.
      */
-    public function nested(
-    ): DefinesRelationships;
+    public function nested(): self;
 
     /**
      * Defines a choice between concrete implementations.
@@ -72,10 +67,7 @@ interface DefinesRelationships extends InstructsHowToMap
      *
      * @return DefinesRelationships The updated relationship definer.
      */
-    public function selectBy(
-        string $decisionKey,
-        array $choices
-    ): DefinesRelationships;
+    public function selectBy(string $decisionKey, array $choices): self;
 
     /**
      * Add a property with optional mapping instructions.
@@ -93,5 +85,5 @@ interface DefinesRelationships extends InstructsHowToMap
     public function with(
         string $property,
         InstructsHowToMap $instruction = null
-    ): DefinesRelationships;
+    ): self;
 }

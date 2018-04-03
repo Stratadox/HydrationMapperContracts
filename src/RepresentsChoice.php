@@ -31,7 +31,7 @@ interface RepresentsChoice
     public function with(
         string $property,
         InstructsHowToMap $howToMap = null
-    ): RepresentsChoice;
+    ): self;
 
     /**
      * Finalise the process and produce a mapped hydrator.
