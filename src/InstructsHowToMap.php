@@ -20,5 +20,5 @@ interface InstructsHowToMap
      * @param string $property
      * @return MapsProperty
      */
-    public function followFor(string $property) : MapsProperty;
+    public function followFor(string $property): MapsProperty;
 }

@@ -24,12 +24,12 @@ interface MakesMap
     public function property(
         string $property,
         InstructsHowToMap $instruction = null
-    ) : MakesMap;
+    ): MakesMap;
 
     /**
      * Finalise the process and produce the object mapping.
      *
      * @return Hydrates
      */
-    public function finish() : Hydrates;
+    public function finish(): Hydrates;
 }

@@ -24,12 +24,12 @@ interface RepresentsChoice
     public function with(
         string $property,
         InstructsHowToMap $howToMap = null
-    ) : RepresentsChoice;
+    ): RepresentsChoice;
 
     /**
      * Finalise the process and produce a mapped hydrator.
      *
      * @return Hydrates
      */
-    public function finish() : Hydrates;
+    public function finish(): Hydrates;
 }
