@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "99b83834de2acb04b62f64dd4ffa5ec1",
+    "content-hash": "06aedf1cba4d682051055e270c4cc46c",
     "packages": [
         {
             "name": "stratadox/collection-contracts",
@@ -81,20 +81,23 @@
         },
         {
             "name": "stratadox/hydrator-contracts",
-            "version": "v0.1.1",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Stratadox/HydratorContracts.git",
-                "reference": "c1bbfa077eebce3b20523f3e718c2cb45603bc26"
+                "reference": "a842587dba9082a94dc2b84b7773396ecb8ddf07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Stratadox/HydratorContracts/zipball/c1bbfa077eebce3b20523f3e718c2cb45603bc26",
-                "reference": "c1bbfa077eebce3b20523f3e718c2cb45603bc26",
+                "url": "https://api.github.com/repos/Stratadox/HydratorContracts/zipball/a842587dba9082a94dc2b84b7773396ecb8ddf07",
+                "reference": "a842587dba9082a94dc2b84b7773396ecb8ddf07",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
+            },
+            "suggest": {
+                "stratadox/hydrator": "For loading objects according to this interface."
             },
             "type": "library",
             "autoload": {
@@ -112,7 +115,7 @@
                     "homepage": "http://www.stratadox.com/"
                 }
             ],
-            "time": "2018-01-30T22:22:34+00:00"
+            "time": "2018-04-24T16:06:03+00:00"
         },
         {
             "name": "stratadox/proxy-contracts",
