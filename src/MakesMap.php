@@ -37,6 +37,25 @@ interface MakesMap
     ): self;
 
     /**
+     * Defines a choice between concrete implementations.
+     *
+     * Maps interfaces or parent classes to the correct concrete classes.
+     * Enables single-table inheritance and similar inheritance mapping schemes.
+     * @see RepresentsChoice
+     *
+     * @param string $decisionKey The name of the data key whose value will be
+     *                            used to decide which hydrator to use.
+     * @param array $choices      An associative array with the available
+     *                            choices as keys, and choice representations
+     *                            as values.
+     * @return MakesMap           The updated map builder.
+     */
+    public function selectBy(
+        string $decisionKey,
+        array $choices
+    ): MakesMap;
+
+    /**
      * Finalise the process and produce the mapped hydrator.
      *
      * Produces a hydrator, mapped according to the mapper configuration.
