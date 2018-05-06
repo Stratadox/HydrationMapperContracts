@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Stratadox\HydrationMapper;
 
 use Stratadox\HydrationMapping\MapsProperty;
+use Stratadox\Specification\Contract\Satisfiable;
 
 /**
  * Builds the property mapping.
@@ -26,4 +27,12 @@ interface InstructsHowToMap
      * @throws InvalidMapperConfiguration
      */
     public function followFor(string $property): MapsProperty;
+
+    /**
+     * Add a constraint for the value, to be checked before assigning.
+     *
+     * @param Satisfiable $constraint The constraint to verify.
+     * @return InstructsHowToMap      The updated mapping instruction.
+     */
+    public function that(Satisfiable $constraint): InstructsHowToMap;
 }
